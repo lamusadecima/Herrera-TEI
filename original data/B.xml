@@ -26,7 +26,7 @@ href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ty
                 <funder>Ayudas para la Formación de Profesorado Universitario, FPU 2014. Ministerio de Educación y Ciencia</funder>
             </titleStmt>
             <publicationStmt>
-                <distributor>Corpus Herrera</distributor><!--sugerencia -->
+              <distributor>Corpus poético de Fernando de Herrera</distributor>
                 <availability status="free">
                   <licence target="https://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</licence>
                 </availability>
@@ -48,7 +48,7 @@ href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ty
             <term type="basicClassification" key="17.97">17.97 Texts by a single author</term>
           </keywords>
           <keywords scheme="https://d-nb.info/gnd/">
-            <term ref="http://d-nb.info/gnd/4055555-0">Sonnets</term>
+            <term ref="https://d-nb.info/gnd/4036774-5">Poetry</term>
           </keywords>
           <keywords scheme="http://textgrid.info/namespaces/metadata/core/2010#genre">
             <term type="genre-tg">verse</term>

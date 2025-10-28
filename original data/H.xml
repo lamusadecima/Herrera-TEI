@@ -1,3 +1,9 @@
+<?xml-model
+href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -5,16 +11,23 @@
                 <title>
                     Corpus de poesía de Fernando de Herrera. Algunas obras (1582)
                 </title>
-                <author>Fernando de Herrera</author>
+              <author>
+                <persName><forename>Fernando</forename> <nameLink>de</nameLink> <surname> Herrera</surname></persName>
+                <idno>
+                  <idno type="wikidata" corresp="http://www.wikidata.org/entity/Q731218">Q731218</idno>
+                  <idno type="gnd" corresp="http://d-nb.info/gnd/118774212">118774212</idno>
+                  <idno type="bne" corresp="https://datos.bne.es/resource/XX1000338">XX1000338</idno>
+                </idno>
+              </author>
                 <respStmt>
                     <resp>Digitalización del corpus, revisión, corrección, modernización y anotación TEI</resp>
-                    <persName>Laura Hernández Lorenzo</persName>
+                  <persName corresp="https://orcid.org/0000-0003-3489-2193" xml:id="LHL">Laura Hernández Lorenzo</persName>
                 </respStmt>
                 <funder>Ayudas para la Formación de Profesorado Universitario, FPU 2014. Ministerio de Educación y Ciencia</funder>
             </titleStmt>
             <publicationStmt>
-                <distributor>Laura Hernández Lorenzo</distributor>
-                <availability status = "free">
+              <distributor>Corpus poético de Fernando de Herrera</distributor>
+                <availability status="free">
                   <licence target="https://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</licence>
                 </availability>
             </publicationStmt>
@@ -25,10 +38,27 @@
                 </bibl>            
             </sourceDesc>
         </fileDesc>
+      <profileDesc>
+        <langUsage>
+          <language ident="spa">Spanish</language>
+        </langUsage>
+        <textClass>
+          <keywords scheme="http://uri.gbv.de/terminology/bk/">
+            <term type="basicClassification" key="18.32">18.32 Spanish literature</term>
+            <term type="basicClassification" key="17.97">17.97 Texts by a single author</term>
+          </keywords>
+          <keywords scheme="https://d-nb.info/gnd/">
+            <term ref="https://d-nb.info/gnd/4036774-5">Poetry</term>
+          </keywords>
+          <keywords scheme="http://textgrid.info/namespaces/metadata/core/2010#genre">
+            <term type="genre-tg">verse</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
     </teiHeader>    
     <text>
         <body>
-                <div1 type="poem">
+                <div type="poem">
         <head>SONETO I</head>
         <lg>
           <l>Osé, y temí;  mas pudo la osadía</l>
@@ -52,8 +82,8 @@
           <l>no es honra  ya, ni  justo, que se  estime</l>
           <l>tan mal de quien  tan  bien  rindió  su pecho.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  II</head>
         <lg>
           <l>Voy siguiendo la fuerza de mi hado</l>
@@ -77,8 +107,8 @@
           <l>en mi afrenta, que  olvide aquella historia,</l>
           <l>que descubrió la senda de mis males.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO III</head>
         <lg>
           <l>Pensé, mas fue engañoso pensamiento,</l>
@@ -102,8 +132,8 @@
           <l>que,  cuanto de su fuerza  más deshecho,</l>
           <l>tanto más de su eterno afán  respiro.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  IIII</head>
         <lg>
           <l>El Sátiro, que el fuego  vio primero,</l>
@@ -127,8 +157,8 @@
           <l>mas si me pierdo  con el  bien que veo,</l>
           <l>como  no estoy ceniza  todo  hecho?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO   V</head>
         <lg>
           <l>Hórrido invierno,  que la luz serena,</l>
@@ -152,8 +182,8 @@
           <l>culpa tuya, apartado del Sol mío,</l>
           <l>no me  enciendo en los rayos de su frente.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  VI</head>
         <lg>
           <l>Al mar desierto  en el profundo  estrecho</l>
@@ -177,8 +207,8 @@
           <l>que no me da lugar el mal presente,</l>
           <l>ni osar me vale en el temor perdido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA  I</head>
         <lg>
           <l>Si el grave mal, que el corazón me parte,</l>
@@ -421,8 +451,8 @@
           <l>y el collado de Cintra, esclarecido</l>
           <l>con tal honra, será otro  nuevo Pindo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  VII</head>
         <lg>
           <l>No puedo sufrir  más el dolor fiero,</l>
@@ -446,8 +476,8 @@
           <l>puso su fuerza en abrasar  mi alma,</l>
           <l>dejando  casi sin tocar el pecho.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  VIII</head>
         <lg>
           <l>Por qué  renuevas este encendimiento,</l>
@@ -471,8 +501,8 @@
           <l>en la luz de mi Estrella  están, y al brazo</l>
           <l>tuyo no puede resistir  la malla.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  IX</head>
         <lg>
           <l>Esta desnuda  playa, esta llanura,</l>
@@ -496,8 +526,8 @@
           <l>que el Español, muriendo  no rendido,</l>
           <l>llevó de Grecia y Asia el nombre y gloria.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  X</head>
         <lg>
           <l>Rojo Sol, que con hacha luminosa</l>
@@ -521,8 +551,8 @@
           <l>oísteis vos mis penas nunca usadas?</l>
           <l>visteis Luz más ingrata a mis querellas?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XI</head>
         <lg>
           <l>Suspiro, y pruebo con la voz doliente,</l>
@@ -546,8 +576,8 @@
           <l>y como el cisne muere en dulce canto,</l>
           <l>así acabo la vida en el suspiro.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XII</head>
         <lg>
           <l>Yo voy por esta solitaria  tierra,</l>
@@ -571,8 +601,8 @@
           <l>desconfianza, olvido, celo, ausencia,</l>
           <l>por qué cansáis a un mísero rendido?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA  II</head>
         <lg>
           <l>Cual fiero ardor,  cual encendida llama,</l>
@@ -690,8 +720,8 @@
           <l>que falte causa al mal, por quien suspiro;</l>
           <l>y así estoy ante vos solo y  ausente.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XIII</head>
         <lg>
           <l>Dulces halagos, tierno sentimiento,</l>
@@ -715,8 +745,8 @@
           <l>del bien, que tuve, en esperanza vana,</l>
           <l>segura una hora de alegría cierta.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XIIII</head>
         <lg>
           <l>Do vas? do vas cruel?  do vas? refrena,</l>
@@ -740,8 +770,8 @@
           <l>y en vez de luz cercado de tiniebla,</l>
           <l>y en lágrimas ardientes convertido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XV</head>
         <lg>
           <l>En vano error de dulce engaño espero,</l>
@@ -765,8 +795,8 @@
           <l>y con la honra de saber, penando,</l>
           <l>que nunca a Troya ardió fuego tan bello.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XVI</head>
         <lg>
           <l>Qué espíritu encendido Amor envía</l>
@@ -790,8 +820,8 @@
           <l>incendio al esconder de las estrellas,</l>
           <l>y ceniza al volver  de nueva  Aurora.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO XVII</head>
         <lg>
           <l>Despoja  la hermosa y verde  frente</l>
@@ -815,8 +845,8 @@
           <l>firme  a mi mal, que el  variar  del cielo</l>
           <l>tiene contra su fuerza suspendido!</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO XVIII</head>
         <lg>
           <l>Flaca  esperanza en todas mis porfías,</l>
@@ -840,8 +870,8 @@
           <l>que (como  al bien no esté enseñado y hecho)</l>
           <l>abrazo ufano  el grave  dolor  mío.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XIX</head>
         <lg>
           <l>Yo vi unos bellos ojos, que hirieron</l>
@@ -865,8 +895,8 @@
           <l>y la membranza de mi bien presente;</l>
           <l>y en ciego engaño de esperanza muero.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XX</head>
         <lg>
           <l>Si puede celebrar mi rudo canto</l>
@@ -890,8 +920,8 @@
           <l>a vos todo me tienen ofrecido,</l>
           <l>oh ilustre honor del nombre Maldonado.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>CANCION  I</head>
         <lg>
           <l>Voz de dolor, y canto de gemido,</l>
@@ -1013,8 +1043,8 @@
           <l>y  Luco amedrentado, al mar inmenso</l>
           <l>pagará de Africana  sangre el censo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXI</head>
         <lg>
           <l>Como en la cumbre  excelsa de Mimante,</l>
@@ -1038,8 +1068,8 @@
           <l>bella Estrella  de Amor; que mi tormento</l>
           <l>no cabe bien en vaso tan estrecho.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXII</head>
         <lg>
           <l>Céfiro  renovó en mi tierno pecho</l>
@@ -1063,8 +1093,8 @@
           <l>la nieve, que aunque el fuego me defiende,</l>
           <l>medroso estoy del daño recibido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXIII</head>
         <lg>
           <l>En la oscura tiniebla del olvido,</l>
@@ -1088,8 +1118,8 @@
           <l>de mi Enemiga, que saldría luego</l>
           <l>a la pura región de la alegría.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXIIII</head>
         <lg>
           <l>Oye tú solo, eterno y sacro río</l>
@@ -1113,8 +1143,8 @@
           <l>a quien vencer mis lágrimas porfían,</l>
           <l>viva siempre mi mal, y amor crecido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXV</head>
         <lg>
           <l>Salen mil pensamientos al encuentro,</l>
@@ -1138,8 +1168,8 @@
           <l>que yo sé bien por el ausente engaño</l>
           <l>juzgar de este presente el fin confuso.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXVI</head>
         <lg>
           <l>Subo, con tan gran peso quebrantado,</l>
@@ -1163,8 +1193,8 @@
           <l>y sin cesar, cual rueda vuelve en torno;</l>
           <l>así revuelvo a despeñarme al daño.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXVII</head>
         <lg>
           <l>El color bello en el humor de Tiro</l>
@@ -1188,8 +1218,8 @@
           <l>su bien, en cuantas almas halla, informa;</l>
           <l>que en el  comunicar  más gloria gana.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXVIII</head>
         <lg>
           <l>Suave Filomela, que tu llanto</l>
@@ -1213,8 +1243,8 @@
           <l>tu voz suene,  o yo cante mis enojos,</l>
           <l>vuelto en ti, Ruiseñor  blando y lloroso.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXIX</head>
         <lg>
           <l>Huyo apriesa medroso  el horror  frío,</l>
@@ -1238,8 +1268,8 @@
           <l>estáis, o si pasión presente os mueve,</l>
           <l>tened dolor de verme tan perdido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO XXX</head>
         <lg>
           <l>Canso la vida en esperar un día</l>
@@ -1263,8 +1293,8 @@
           <l>de la suerte en mi daño conjurada,</l>
           <l>y esperando contino desespero.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA III</head>
         <lg>
           <l>No bañes en el  mar sagrado  y cano,</l>
@@ -1387,8 +1417,8 @@
           <l>que en  tanto que tu yaces en reposo,</l>
           <l>podrá  Amor darme gloria semejante.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXI</head>
         <lg>
           <l>El tiempo, que se alarga  al mal extraño,</l>
@@ -1412,8 +1442,8 @@
           <l>y en las penas, que a todos son mortales,</l>
           <l>renacerá  contino  mi tormento.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXII</head>
         <lg>
           <l>Oh cara perdición, oh dulce engaño;</l>
@@ -1437,8 +1467,8 @@
           <l>de osar  perderme,  ya que estoy  desierto</l>
           <l>de bien, no pones a mi mal consuelo?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXIII</head>
         <lg>
           <l>Ardientes hebras, do se ilustra el oro,</l>
@@ -1462,8 +1492,8 @@
           <l>tanto  es mayor valor y gloria mía;</l>
           <l>y tanto os temo, cuanto  más os amo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXIIII</head>
         <lg>
           <l>Venció las fuerzas el Amor tirano,</l>
@@ -1487,8 +1517,8 @@
           <l>que contraste gran tiempo a tanto daño;</l>
           <l>ni en tal error me vale ya ser cuerdo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>CANCION   II</head>
         <lg>
           <l>Si alguna vez mi pena</l>
@@ -1629,8 +1659,8 @@
           <l>y que la bella Flora,</l>
           <l>y los reinos la canten de la Aurora.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXV</head>
         <lg>
           <l>Por un camino solo, al Sol abierto,</l>
@@ -1654,8 +1684,8 @@
           <l>que me libre de Amor,  y  de estos  males;</l>
           <l>pues remedio sin vos, mi Luz, no espero.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXVI</head>
         <lg>
           <l>Llevarme puede bien la suerte  mía</l>
@@ -1679,8 +1709,8 @@
           <l>de mi hielo y mi llama alegre canto</l>
           <l>de mi dichoso mal la rica historia.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO XXXVII</head>
         <lg>
           <l>Mi bien, que  tardo  fue a llegar, en vuelo</l>
@@ -1704,8 +1734,8 @@
           <l>y, puesto en la presente  pena mía,</l>
           <l>descanso, cuando estoy  más lastimado.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXVIII</head>
         <lg>
           <l>Serena Luz, en quien presente  espira</l>
@@ -1729,8 +1759,8 @@
           <l>(aunque a  mi flaca vista ofende y cubre)</l>
           <l>la inmensa busco, y voy siguiendo al cielo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XXXIX</head>
         <lg>
           <l>Pura,  bella, suave  Estrella  mía,</l>
@@ -1754,8 +1784,8 @@
           <l>si Luna sois, del cazador  el pecho,</l>
           <l>y no de él, que honró Arcadia,  la figura.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XL</head>
         <lg>
           <l>Viví gran tiempo  en confusión  perdido,</l>
@@ -1779,8 +1809,8 @@
           <l>acabar  semejante  desvarío;</l>
           <l>antes que prevalezcan sus engaños.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLI</head>
         <lg>
           <l>Estoy pensando  en mi dolor presente,</l>
@@ -1804,8 +1834,8 @@
           <l>podré decir en honra de este  hecho,</l>
           <l>que solo debo a ti poder ser mío.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA  IIII</head>
         <lg>
           <l>A la pequeña luz del breve día,</l>
@@ -2248,8 +2278,8 @@
           <l>por volver a este mal con tanto  brío,</l>
           <l>sabed, que debo más a mi cuidado.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLII</head>
         <lg>
           <l>Aura  mansa,  y templada de Occidente,</l>
@@ -2273,8 +2303,8 @@
           <l>ardo  siempre, y me abraso en llama pura.</l>
           <l>ah no añadas más fuego a mis ardores.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLIII</head>
         <lg>
           <l>Oh como  vuela  en alto  mi deseo,</l>
@@ -2298,8 +2328,8 @@
           <l>pero si muero,  porque osé, perdido,</l>
           <l>jamás a igual empresa osó algún  hombre.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO XLIIII</head>
         <lg>
           <l>En esta  soledad, que el  Sol ardiente</l>
@@ -2323,8 +2353,8 @@
           <l>que aun en este ocioso apartamiento</l>
           <l>no se afirma en segura fantasía.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLV</head>
         <lg>
           <l>Clara,  suave  luz, alegre y   bella,</l>
@@ -2348,8 +2378,8 @@
           <l>no podré  ya encender? por qué no inflama</l>
           <l>mi estío  ardiente a vuestro helado  invierno?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLVI</head>
         <lg>
           <l>Cubre en oscuro cerco y sombra  fría</l>
@@ -2373,8 +2403,8 @@
           <l>librarme del tormento no cansado,</l>
           <l>que excede  al del antiguo  Prometeo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLVII</head>
         <lg>
           <l>Quien osa desnudar  la bella frente</l>
@@ -2398,8 +2428,8 @@
           <l>siempre con viva luz un claro día</l>
           <l>en sus sagrados cercos y corona.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>CANCION   III</head>
         <lg>
           <l>Cuando con  resonante</l>
@@ -2601,8 +2631,8 @@
           <l>el cielo, y resplandece,</l>
           <l>y Mavorte medroso se oscurece.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLVIII</head>
         <lg>
           <l>Rompió la  proa en dura roca abierta</l>
@@ -2626,8 +2656,8 @@
           <l>ninguno  navegó, que al fin deshecho,</l>
           <l>no se perdiese falto de ventura.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  XLIX</head>
         <lg>
           <l>Esperé un tiempo, y fue esperanza vana,</l>
@@ -2651,8 +2681,8 @@
           <l>ocupa  Amor, tirano señor  mío?</l>
           <l>qué?  si me fuerzan  de mi Luz los ojos.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO L</head>
         <lg>
           <l>Pierdo, tu culpa  Amor,  pierdo  engañado,</l>
@@ -2676,8 +2706,8 @@
           <l>pueden borrar  del corazón esquivo,</l>
           <l>lo que nunca podrá gastar la muerte.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LI</head>
         <lg>
           <l>No espero en mi dolor lo que deseo,</l>
@@ -2701,8 +2731,8 @@
           <l>porque es  al corazón desesperado</l>
           <l>la obstinación  impenetrable escudo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO   LII</head>
         <lg>
           <l>Aquí, do estoy ausente y escondido,</l>
@@ -2726,8 +2756,8 @@
           <l>de mi error al peligro,  que ya basta</l>
           <l>ver el fin, sin  tentar nueva  ventura.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO LIII</head>
         <lg>
           <l>De este tan grave peso, que cansado</l>
@@ -2751,8 +2781,8 @@
           <l>será de mí, si soy varón,  vencido</l>
           <l>otro,  mayor que el Africano  Anteo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LIIII</head>
         <lg>
           <l>Lloré, y canté de Amor  la saña ardiente;</l>
@@ -2776,8 +2806,8 @@
           <l>no cansa, ni se rinde al dolor fiero;</l>
           <l>mas siempre  va al encuentro de mi muerte.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA   V</head>
         <lg>
           <l>Bien puedo, injusto Amor, pues ya no tengo</l>
@@ -3110,8 +3140,8 @@
           <l>que nace de su luz serena y bella,</l>
           <l>cual siempre, me traerá  vencido y ciego.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LV</head>
         <lg>
           <l>Yerto y doblado monte, y tu luciente</l>
@@ -3135,8 +3165,8 @@
           <l>espero pues (si me es la edad no avara)</l>
           <l>mostrar,  cuan varias son, y cuan hermosas.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LVI</head>
         <lg>
           <l>Temiendo  tu valor, tu ardiente  espada,</l>
@@ -3160,8 +3190,8 @@
           <l>que no sea trofeo de tu gloria,</l>
           <l>ni le resta mas honra al fiero Marte.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LVII</head>
         <lg>
           <l>Cual rociada Aurora en blanco velo</l>
@@ -3185,8 +3215,8 @@
           <l>sus alas quemó preso;  y la victoria</l>
           <l>entregó de mi alma a vuestros  ojos.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO LVIII</head>
         <lg>
           <l>Alegre, fértil, vario, fresco prado,</l>
@@ -3210,8 +3240,8 @@
           <l>antes  Venus, las Gracias, los Amores</l>
           <l>os miren, y en vos reine la Alegría.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LIX</head>
         <lg>
           <l>Vos, celebrando  al son de noble lira</l>
@@ -3235,8 +3265,8 @@
           <l>avivo de mis males la memoria,</l>
           <l>desesperado,  y nunca arrepentido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>CANCION IIII</head>
         <lg>
           <l>Esparce   en estas flores</l>
@@ -3377,8 +3407,8 @@
           <l>sufra  vuestra  belleza</l>
           <l>mi rústica  simpleza.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LX</head>
         <lg>
           <l>Esconde  tardo Bágrada en tu seno</l>
@@ -3402,8 +3432,8 @@
           <l>rendirse al brazo suyo poderoso</l>
           <l>cuanto  abrazan  el Nilo y grande Atlante.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXI</head>
         <lg>
           <l>Cual de oro  era el cabello ensortijado,</l>
@@ -3427,8 +3457,8 @@
           <l>y mostró su poder y su  riqueza,</l>
           <l>si no fuera la Luz de la alma mía.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXII</head>
         <lg>
           <l>Hacer  no puede ausencia,  que presente</l>
@@ -3452,8 +3482,8 @@
           <l>mas vos, siempre enemiga a mi deseo,</l>
           <l>os mostráis  sin dolor a mi tristeza.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA  VI</head>
         <lg>
           <l>De aquel error,  en que viví engañado,</l>
@@ -3751,8 +3781,8 @@
           <l>da a un corazón modesto y bien regido,</l>
           <l>fuera de todo humano desconcierto.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>EGLOGA  VENATORIA</head>
         <lg>
           <l>De aljaba  y arco tu Diana armada,</l>
@@ -3932,8 +3962,8 @@
           <l>ven Clearista,  ven ya Ninfa mía,</l>
           <l>este prado te llama y  fuente fría.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXIII</head>
         <lg>
           <l>Error fue vano disponer el pecho,</l>
@@ -3957,8 +3987,8 @@
           <l>al golpe del Amor, si está tocado</l>
           <l>siempre en el fuego de mis dos estrellas?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXIIII</head>
         <lg>
           <l>Ya que el sujeto reino Lusitano</l>
@@ -3982,8 +4012,8 @@
           <l>bastará alzar la frente,  que al  instante</l>
           <l>no se derribe a vuestros  pies rendido?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXV</head>
         <lg>
           <l>Ya el rigor importuno  y grave hielo</l>
@@ -4007,8 +4037,8 @@
           <l>que el tiempo avaro, aunque esta flor destruye,</l>
           <l>contra ella nunca osó intentar  victoria.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXVI</head>
         <lg>
           <l>Esta rota y cansada pesadumbre,</l>
@@ -4032,8 +4062,8 @@
           <l>que la razón oprime en el deseo?</l>
           <l>de ver su error, y  padecer  más daño.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXVII</head>
         <lg>
           <l>Oh breve don de un agradable  engaño,</l>
@@ -4057,8 +4087,8 @@
           <l>del camino,  perece sin memoria</l>
           <l>con mayor culpa en un perpetuo llanto.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>CANCION   V</head>
         <lg>
           <l>Inclinen a tu nombre, oh luz de España,</l>
@@ -4150,8 +4180,8 @@
           <l>y como  puede,  despreciando el suelo,</l>
           <l>un príncipe  guerrero alzarse al cielo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXVIII</head>
         <lg>
           <l>Yo bien pensaba,  cuando el desdén  justo</l>
@@ -4175,8 +4205,8 @@
           <l>mas el temor,  que  de ella está  desnudo,</l>
           <l>y  otra  fuerza  mayor  vencen  mi pecho.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXIX</head>
         <lg>
           <l>Pongan en tu sepulcro,  oh flor de España,</l>
@@ -4200,8 +4230,8 @@
           <l>ingenio y arte  hacen, que vencido</l>
           <l>no pueda ser del tiempo un mortal  hombre.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXX</head>
         <lg>
           <l>Solo y medroso, del peligro cierto,</l>
@@ -4225,8 +4255,8 @@
           <l>y revuelve el caballo presuroso,</l>
           <l>dejando al fiero contendor  herido.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXI</head>
         <lg>
           <l>Del fresco seno ya la blanca Aurora</l>
@@ -4250,8 +4280,8 @@
           <l>pareció más que vos bella y fulgente</l>
           <l>mi Luz, que honora el rico, Hesperio suelo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXII</head>
         <lg>
           <l>Amor en mí se muestra  todo fuego,</l>
@@ -4275,8 +4305,8 @@
           <l>o el corazón desvanecido en llama,</l>
           <l>ni temiera mi llama, ni su hielo.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>ELEGIA  VII</head>
         <lg>
           <l>Si el presente  dolor de vuestra  pena</l>
@@ -4604,8 +4634,8 @@
           <l>y del mucho amor vuestro la grandeza,</l>
           <l>ni puedo, ni merezco tal ventura.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXIII</head>
         <lg>
           <l>Tú, que con la robusta y ancha frente</l>
@@ -4629,8 +4659,8 @@
           <l>sostuve  glorioso y de bien lleno,</l>
           <l>cuanto sufrió la corta suerte  mía.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXIV</head>
         <lg>
           <l>Donde el dolor me lleva, vuelvo el paso</l>
@@ -4654,8 +4684,8 @@
           <l>el corazón caído;  y  más me canso,</l>
           <l>cuando el trabajo  intenso en algo afloja.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXV</head>
         <lg>
           <l>Sigo por un desierto  no tratado,</l>
@@ -4679,8 +4709,8 @@
           <l>o en los concursos  de su movimiento</l>
           <l>moriré,  con mis males acabando.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXVI</head>
         <lg>
           <l>El triste afán del corazón doliente</l>
@@ -4704,8 +4734,8 @@
           <l>resistir; pues no pudo el grave llanto,</l>
           <l>quebrantar su rigor, del dolor mío.</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXVII</head>
         <lg>
           <l>Cese tu fuego, Amor, cese ya, en tanto</l>
@@ -4729,8 +4759,8 @@
           <l>que más te agrada desatallo  ardiendo?</l>
           <l>es menos mal lo que es más diferente?</l>
         </lg>
-    </div1>
-    <div1 type="poem">
+    </div>
+    <div type="poem">
         <head>SONETO  LXXVIII</head>
         <lg>
           <l>Amor, en un incendio  no acabado</l>
@@ -4754,7 +4784,7 @@
           <l>antes que el lazo rompa el tiempo, y muerto</l>
           <l>sea el fuego del tardo  hielo mío.</l>
         </lg>
-    </div1>
+    </div>
         </body>
     </text>
 </TEI>
