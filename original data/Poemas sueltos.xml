@@ -8,9 +8,7 @@ href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ty
 <teiHeader>
     <fileDesc>
         <titleStmt>
-            <title>
-                Corpus de poesía de Fernando de Herrera. Poemas sueltos
-            </title>
+            <title>Poemas sueltos</title>
           <author>
             <persName><forename>Fernando</forename> <nameLink>de</nameLink> <surname> Herrera</surname></persName>
             <idno>

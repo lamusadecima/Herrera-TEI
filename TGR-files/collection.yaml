@@ -1,0 +1,164 @@
+collection:
+  title:  # Title of the collection
+    short: corpus_poetico  # Short title of the collection
+    long: corpus poético  # Long title of the collection
+  # Collection rights holder
+  #  examples:
+  # - fullname: Lanegan, Mark
+  #   url: https://en.wikipedia.org/wiki/Mark_Lanegan
+  # - fullname: Gossard, Stone
+  #   url: https://en.wikipedia.org/wiki/Stone_Gossard
+  rights_holder:
+    - fullname: Corpus poético de Fernando de Herrera
+      url:
+  # Collection collector
+  #  examples:
+  # - fullname: Vedder, Eddie
+  #   url: https://en.wikipedia.org/wiki/Eddie_Vedder
+  # - fullname: Cornell, Chris
+  #   url: https://en.wikipedia.org/wiki/Chris_Cornell
+  collector:
+    - fullname: Laura Hernández-Lorenzo
+      url: https://orcid.org/0000-0003-3489-2193
+  attributes:  # define an xpath for each attribute within TEI file
+    work:
+      title:  # This is the main title
+        xpath: //fileDesc//titleStmt//title
+        value:
+      author:
+        id:
+          xpath: 
+          value: "http://d-nb.info/gnd/118774212"
+        fullname:
+          xpath: 
+          value: 
+        firstname:
+          xpath: 
+          value: "Fernando"
+        lastname:
+          xpath: 
+          value: "de Herrera"
+      genre:
+        xpath: 
+        value: "verse"
+      dateOfCreation:
+        date:
+          xpath:
+          value:
+        notBefore:
+          xpath:
+          value: 1534
+        notAfter:
+          xpath:
+          value: 1597
+      place:
+        xpath:
+        value:
+      id:
+        xpath:
+        value:
+    edition:
+      title:
+        xpath: //fileDesc//titleStmt//title
+        value:
+      author:
+        id:
+          xpath:
+          value: "gnd:118774212"
+        fullname:
+          xpath:
+          value:
+        firstname:
+          xpath:
+          value: "Fernando"
+        lastname:
+          xpath:
+          value: "de Herrera"
+      license:
+        title:
+          xpath:
+          value: CC-BY-NC
+        url:
+          xpath:
+          value: "https://creativecommons.org/licenses/by-nc/4.0/"
+      date:
+        xpath:
+        value:
+      place:
+        xpath:
+        value:
+      language:
+        xpath: //profileDesc/langUsage/language/@ident
+        value: 
+      wordcount:
+        xpath:
+        value:
+  # basic_classifications can be defined as a list of dictionaries with the following
+  # examples:
+  # - id:
+  #      value:
+  #      xpath: //find_me[@via="this"]/xpath
+  #   url:
+  #      value: https://d-nb.info/gnd/
+  #      xpath:
+  #   value:
+  #      value: I am a fixed value
+  #      xpath:
+  basic_classifications:
+    - id:
+        xpath: //textClass/keywords[@scheme="http://uri.gbv.de/terminology/bk/"]/term/@key
+        value:
+      url:
+        xpath:
+        value: http://uri.gbv.de/terminology/bk/
+      value:
+        xpath: //textClass/keywords[@scheme="http://uri.gbv.de/terminology/bk/"]/term
+        value:
+  # gnd_subjects can be defined as a list of dictionaries with the following
+  # examples:
+  # - id:
+  #      value:
+  #      xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term/@ref
+  #   url:
+  #      value: https://d-nb.info/gnd/
+  #      xpath:
+  #   value:
+  #      value:
+  #      xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term
+  gnd_subjects:
+    - id:
+        xpath: //textClass/keywords[@scheme="https://d-nb.info/gnd/"]/term/@key
+        value:
+      url:
+        xpath:
+        value: https://d-nb.info/gnd/
+      value:
+        xpath: //textClass/keywords[@scheme="https://d-nb.info/gnd/"]/term
+        value:
+  eltec_specs:  # eltec_specifications
+    time_slot:
+      xpath:
+      value:
+    author_gender:
+      xpath:
+      value: "male"
+    size:
+      xpath:
+      value:
+    reprintCount:
+      xpath:
+      value:
+    corpus_collection:
+      xpath:
+      value:
+  elements:
+    - fullpath: /home/jovyan/corpora/herrera/B.xml
+      filename: B.xml
+    - fullpath: /home/jovyan/corpora/herrera/H.xml
+      filename: H.xml
+    - fullpath: /home/jovyan/corpora/herrera/P.xml
+      filename: P.xml
+    - fullpath: /home/jovyan/corpora/herrera/P2.xml
+      filename: P2.xml
+    - fullpath: /home/jovyan/corpora/herrera/Poemas sueltos.xml
+      filename: Poemas sueltos.xml
