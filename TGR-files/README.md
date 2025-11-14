@@ -1,1 +1,3 @@
+# Corpus poético de Fernando de Herrera
+
 This corpus contains the complete poetic works of the 16th-century Spanish writer Fernando de Herrera (1534–1597), with the sole exception of his Latin poems. The corpus comprises both his undisputed poetry and the controversial 1619 edition, *Verses*—although recent stylometric research supports the authenticity of the latter. The texts were modernized to standard Spanish.

@@ -127,7 +127,7 @@ collection:
   #      xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term
   gnd_subjects:
     - id:
-        xpath: //textClass/keywords[@scheme="https://d-nb.info/gnd/"]/term/@key
+        xpath: //textClass/keywords[@scheme="https://d-nb.info/gnd/"]/term/@ref
         value:
       url:
         xpath:
